@@ -1,6 +1,6 @@
 - hosts: localhost
   gather_facts: true
   roles:
-          - {{ ansible_facts['os_family'] }}
+          - "{{ ansible_facts['os_family'] }}"
           - users
           - packages

@@ -1,0 +1,9 @@
+- name: Install packages
+  homebrew: name={{item}}
+  with_items:
+          - fish
+          - git
+          - exa
+          - python3
+          - vim
+          - thefuck

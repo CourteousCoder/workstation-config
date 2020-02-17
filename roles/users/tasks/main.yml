@@ -1,0 +1,4 @@
+- name: create ansible user
+  user: name=ansible uid=900
+- name: copy sudoers
+  copy: src=files/sudoers.d/{{sudoers}} dest=/etc/sudoers.d/ owner=root group=root mode=0440
